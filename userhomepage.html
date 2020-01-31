@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>userhomepage</title>
+    <link rel="stylesheet" href="userhomepage.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="userhomepage.js"></script>
+</head>
+
+<body>
+
+    <div class="topnav" id="myTopnav">
+        <a href="home.html" class="logo">Quick Sign</a>
+        <a href="contacts.html">Contact</a>
+        <a href="about.html">About</a>
+        <a href="home.html">Home</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <div class="main">
+        <div class="main1">
+            <h2>Attendance portal</h2>
+            <div class=profile>
+                <img class="image" src="https://bit.ly/2REs2TX" height="180" width="200" alt="user profile">
+                <p>Juma</p>
+            </div>
+            <div class="button2">
+                <button class="btn" onclick="checkinFunction()">CHECK-IN</button>
+                <button class="btn" onclick="checkoutFunction()">CHECK-OUT</button>
+            </div>
+        </div>
+        <div class="main2">
+            <div id="container">
+                <p><strong> Name:</strong> Juma</p>
+                <p><strong>Email:</strong>Joeljuma@gmail.com</p>
+                <p><strong>Department:</strong> ICT </p>
+                <a class="button1">
+                    <button class="btn btn1" onclick="notificationFunction()">NOTIFICATION</button>
+                    <a href="login.html"><button class="btn btn2">LOGOUT</button></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        &copy; Workers quick-sign | designed by Quick-sign
+    </div>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+
+        function checkinFunction() {
+            alert("check in successfully!");
+        }
+
+        function checkoutFunction() {
+            alert("Check out successful!");
+        }
+
+        function notificationFunction() {
+            alert("No notication found!");
+        }
+    </script>
+
+</body>
+
+</html>

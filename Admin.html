@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Admin</title>
+    <link rel="stylesheet" type="text/css" href="admin.css">
+</head>
+
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="home.html" class="logo">Quick Sign</a>
+        <a href="contacts.html">Contact</a>
+        <a href="about.html">About</a>
+        <a href="home.html">Home</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <img src="https://bit.ly/2vBUPjv">
+    <div id="navigation">
+
+        <input class=btn type="button" value="Log Out" onclick="window.location.href='login.html'">
+        <input class=btn type="button" value="ADD USER" onclick="window.location.href='registerUser.html'">
+    </div>
+    <div id="label">
+        <lebel for="Notification">Type notification below:</lebel>
+        <textarea name="Notification" id="Notification" cols="30" rows="10" placeholder="type notification......."></textarea>
+        <input type="submit" value="Post">
+    </div>
+    <h3>Todays attendance</h3>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Deparment</th>
+            <th>Employee No</th>
+            <th>Email</th>
+            <th>Date</th>
+            <th>Check in time</th>
+            <th>Check out time</th>
+
+        </tr>
+        <tr>
+            <td>Shalom Odida</td>
+            <td>IT</td>
+            <td>Qs0021</td>
+            <td>odidapauline@gmail.com</td>
+            <td>31 Jan 2020</td>
+            <td>08:20AM</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Martin Gathu</td>
+            <td>IT</td>
+            <td>Qs0011</td>
+            <td>martin5gathu@gmail.com</td>
+            <td>31 Jan 2020</td>
+            <td>08:23AM</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Joan Wamuyu</td>
+            <td>Sales manager</td>
+            <td>Qs0021</td>
+            <td>wamuyujoan4@gmail.com</td>
+            <td>31 Jan 2020</td>
+            <td>08:10AM</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Joel Juma</td>
+            <td>IT</td>
+            <td>Qs0021</td>
+            <td>jumajoel08@gmail.com</td>
+            <td>31 Jan 2020</td>
+            <td>08:00AM</td>
+            <td></td>
+        </tr>
+    </table>
+
+    <div class="footer-bottom">
+        &copy; Workers quick-sign | designed by Quick-sign
+    </div>
+    </div>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
