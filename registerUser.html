@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Sign up</title>
+    <link href="https://fonts.googleapis.com/css?family=Abel&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="registerUser.css">
+</head>
+
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="home.html" class="logo">Quick Sign</a>
+        <a href="contacts.html">Contact</a>
+        <a href="about.html">About</a>
+        <a href="home.html">Home</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <form name="loginForm">
+        <table>
+            <tr>
+
+                <th> Quick-sign </th>
+                <th>Create Account</th>
+            </tr>
+            <tr>
+                <td>Username<span>*</span>:</td>
+                <td><input type="text" size=25 name="userid" placeholder="Employee number"></td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="email" size=25 name="mail" placeholder="Enter Email"></td>
+            </tr>
+            <tr>
+                <td>Password<span>*</span>:</td>
+                <td><input type="Password" size=25 name="pwd" placeholder="Enter-password"></td>
+            </tr>
+            <tr>
+                <td> Confirm Password<span>*</span>:</td>
+                <td><input type="Password" size=25 name="pwd2" placeholder="confirm-password"></td>
+            </tr>
+            <tr>
+                <td>upload image </td>
+                <td><input type="file" name="pic" accept="image/*"></td>
+            </tr>
+            <tr>
+                <td><input type="Reset"></td>
+                <td><input type="submit" onclick="return check(this.form)" value="sign-up"></td>
+            </tr>
+
+        </table>
+    </form>
+    <div class="footer-bottom">
+        &copy; Workers quick-sign | designed by Quick-sign
+    </div>
+    </div>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+    <script src="registerUser.js"></script>
+</body>
+
+</html>
